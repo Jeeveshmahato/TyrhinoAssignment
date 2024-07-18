@@ -3,8 +3,7 @@
     padding: 0;
 }
 .banner {
-    /* background:#f7f7f9; */
-    background-color: red; /* For browsers that do not support gradients */
+    background-color: red; 
     background-image: linear-gradient(to left, #ffba00 , #ff8800);
     color: black;
     text-align: center;
@@ -13,10 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 20px; */
     border-radius: 50px;
-    /* height: 50px; */
-    /* padding: 10px 5px 10px 0px; */
+   
 }
 
 #countdown {
