@@ -1,57 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.Examlabs {
+  padding: 21px 15px;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(153, 160, 182, 0.5);
+}
+.home {
+  padding: 22px 15px;
+
+  transition: all 0.25s ease;
+  color: #2b8aeb;
+}
+.home span {
+  color: #7a8ea5;
+}
+.Secure-product {
+  padding: 10px 15px 21px;
+}
+.Secure-product h2 {
+  line-height: 1.5;
+
+  font-size: 31px;
+  font-weight: 600;
+  font-family: GothamProBold, sans-serif;
+  color: #102f50;
+}
+
+.Secure-product h3 {
+  line-height: 1.5;
+
+  font-size: 24px;
+  font-weight: 600;
+  font-family: GothamProMedium, sans-serif;
+  color: #2b8aeb;
+}
+
 .banner {
-    background-color: red; 
-    background-image: linear-gradient(to left, #ffba00 , #ff8800);
-    color: black;
-    text-align: center;
-    padding: 10px 20px 10px 0; 
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50px;
-   
+  /* background:#f7f7f9; */
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to left, #ffba00, #ff8800);
+  color: black;
+  text-align: center;
+  padding-right: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+  border-radius: 50px;
+  /* height: 50px; */
+  /* padding: 10px 5px 10px 0px; */
 }
 
 #countdown {
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
-.limit-clock ,.timer-clock , .coupon-offer{
-    display: flex;
-    gap: 5px;
+.limit-clock,
+.timer-clock,
+.coupon-offer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.limit-clock img {
+  width: 40px;
+}
+@media (max-width: 800px) {
+  .banner {
+    background-color: #ffecca;
+    background-image: linear-gradient(to left, #ffecca, #ffecca);
+padding-top: 10px;
+    border-radius: 12px;
+    border: 1px solid #ff8800;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .limit-clock {
+    gap: 12px;
+  }
+  .coupon-offer {
+    gap: 15px;
+    padding: 10px;
     align-items: center;
-}
-
-h2{
-    font-size: 16px;
-    font-weight: bold;
-}
-.limit-clock img{
-    width: 40px;
-}
-@media(max-width: 800px){
-    .banner{
-        background-color: #ffecca;
-    background-image: linear-gradient(to left, #ffecca , #ffecca);
-
-        border-radius: 12px;
-        border: 1px solid #ff8800;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .limit-clock {
-        gap: 12px;
-    }
-    .coupon-offer{
-        gap: 15px;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-color: #ffd57c;
-    }
+    justify-content: center;
+    width: 100%;
+    background-color: #ffd57c;
+  }
+  .Examlabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Secure-product h3{
+    font-size: 18px;
+  }
+  .Secure-product h2{
+    font-size: 24px;
+  }
 }
